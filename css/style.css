@@ -1,0 +1,222 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px ;
+    margin-top: 3%;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.m {
+    margin: 0;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.m-1 {
+    margin-top: 1%;
+}
+
+.px-1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.px-2 {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/******
+    HEADER STYLES 
+*******/
+
+header {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    /* align-content: flex-start; */
+}
+
+.name {
+    color: #2C618A;
+    font: 2.5rem bold Times;
+    margin-bottom: 0;
+}
+
+
+.ht {
+    margin-top: 3.5%;
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-evenly; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.ht > p:nth-child(2) {
+    color: #666;
+}
+
+/****** 
+    FIRST SECTION STYLE 
+******/
+
+.link {
+    width: 100%;
+    background-color: lightslategray;
+}
+
+.sub-link {
+    list-style-type: none;
+    margin-left: 5%;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sub-link > li {
+    margin: 2px;
+    font-size: 14px;
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+}
+
+/****** 
+    SKILLS STYLE 
+*******/
+
+.skills {
+    margin-left: 11%;
+    padding-bottom: 15px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2C618A;
+}
+
+.sub-title {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 12%;
+    background-color: #2C618A;
+    color: #fff;
+    margin: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+/****** 
+    WORK EXPERIENCE STYLES 
+******/
+
+.pos {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.sub-pos {
+    list-style-type: square;
+}
+
+.sub-pos > li {
+    font-size: 20px;
+}
+
+/***** 
+    PROJECT STYLES 
+******/
+.pro {
+    color: #429999;
+    text-decoration: none;
+}
+
+/******* 
+    MOBILE RESPONSIVENESS 
+*******/
+
+@media (min-width: 300px) and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    /***** 
+        MOBILE HEADER 
+    ******/
+    .ht { 
+        text-align: center;
+    }
+
+    /***** 
+        LINK
+    ******/
+    .link {
+        height: auto;
+    }
+
+    .sub-link {
+        font-size: 16px;
+        margin-left: 0;
+        flex-direction: column;
+        padding: 1px;
+        text-align: center;
+    }
+
+    .sub-link > li {
+        margin: 3px;
+    }
+
+    /****** 
+        SKILLS STYLES
+    *****/
+
+    .box {
+        width: 33%;
+        margin: 3px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /****** 
+        WORK EXPERIENCE STYLES
+    ******/
+
+    .sub-pos {
+        height: auto;
+    }
+
+    .sub-pos > li {
+        margin: 10px;
+    }
+}
